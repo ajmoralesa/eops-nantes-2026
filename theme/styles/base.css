@@ -1,0 +1,129 @@
+/* ============================================================= *
+ *  Base typography & branded prose                              *
+ *                                                               *
+ *  Everything here is brand-agnostic structure: it consumes     *
+ *  the --brand-* tokens (see brands.css) and never hardcodes a  *
+ *  color. Nothing talk-specific belongs in this file.           *
+ * ============================================================= */
+
+.slidev-layout {
+  position: relative;
+  height: 100%;
+  background: #ffffff;
+  color: #1a1a2e;
+}
+
+/* ---- Headings ---- */
+
+.slidev-layout h1 {
+  color: var(--brand-primary-deep);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  position: relative;
+  padding-bottom: 0.32em;
+  margin-bottom: 0.55em;
+  line-height: 1.15;
+}
+
+.slidev-layout h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 54px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--brand-accent-dark), var(--brand-accent-light));
+  border-radius: 2px;
+}
+
+.slidev-layout h2 {
+  color: var(--brand-primary);
+  font-weight: 600;
+}
+
+.slidev-layout h3 {
+  color: var(--brand-accent-dark);
+  font-weight: 600;
+}
+
+/* ---- Links ---- */
+
+.slidev-layout a {
+  color: var(--brand-accent-dark);
+  text-decoration: underline;
+  text-decoration-color: var(--brand-accent);
+  text-underline-offset: 2px;
+  transition: color 0.2s;
+}
+
+.slidev-layout a:hover {
+  color: var(--brand-primary);
+}
+
+/* ---- Blockquotes ---- */
+
+.slidev-layout blockquote {
+  border-left: 4px solid var(--brand-accent);
+  padding-left: 1em;
+  color: #555;
+  font-style: italic;
+}
+
+/* ---- Tables ---- */
+
+.slidev-layout table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.slidev-layout table th {
+  background: var(--brand-primary);
+  color: white;
+  font-weight: 600;
+  padding: 0.5em 0.75em;
+  text-align: left;
+}
+
+.slidev-layout table td {
+  padding: 0.5em 0.75em;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.slidev-layout table tr:nth-child(even) td {
+  background: var(--brand-accent-pale);
+}
+
+/* ---- Lists ---- */
+
+.slidev-layout ul,
+.slidev-layout ol {
+  padding-left: 1.35em;
+}
+
+.slidev-layout ul { list-style: disc; }
+.slidev-layout ol { list-style: decimal; }
+
+.slidev-layout li {
+  margin: 0.35em 0;
+}
+
+.slidev-layout li::marker {
+  color: var(--brand-accent-dark);
+}
+
+/* ---- Strong / em ---- */
+
+.slidev-layout strong {
+  color: var(--brand-primary-deep);
+  font-weight: 700;
+}
+
+/* ---- Inline code ---- */
+
+.slidev-layout :not(pre) > code {
+  background: var(--brand-accent-pale);
+  color: var(--brand-primary);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}

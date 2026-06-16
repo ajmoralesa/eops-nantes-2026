@@ -1,0 +1,406 @@
+/* ============================================================= *
+ *  Project-level style overrides                                 *
+ *  Auto-imported by Slidev (root `styles.{ts,js,css}`), loaded   *
+ *  alongside the theme. Keep talk-specific tweaks here rather    *
+ *  than editing node_modules/slidev-theme-insep (reinstall-safe).*
+ * ============================================================= */
+
+/* --- Imported-slide compatibility ------------------------------ *
+ * Slides imported from the M1 "endurance_performance" deck use the
+ * `--insep-blue` alias (FFTri-era naming) which the current theme
+ * exposes only as `--insep-navy`. Re-create the alias so those
+ * slides and their components (ValueReveal, etc.) keep their colors. */
+:root {
+  --insep-blue: var(--insep-navy, #2c2f65);
+}
+
+/* --- Content-slide titles -------------------------------------- *
+ * The INSEP theme only enlarges the h1 on `cover`, `section` and
+ * `fact` layouts. Every other layout (`default`, `center`,
+ * `two-cols`, `quote`, `end`, image-*) inherits the ~1rem base
+ * size, so those titles read small — and can even be smaller than
+ * body content. Give them a proper heading size so the title
+ * clearly outranks the body text on every content slide.
+ *
+ * Specificity: `.slidev-layout.cover h1` (etc.) is more specific
+ * than `.slidev-layout h1`, so cover/section/fact keep their own
+ * larger sizes and are unaffected by this rule. */
+.slidev-layout h1 {
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+/* --- Ongoing-projects list (slide "Quatre projets") ------------ *
+ * A vertical, numbered list of current projects. Reads as a live
+ * "work in progress" board: each row carries a discipline emoji, a
+ * federation pill and a pulsing "en cours" status; a trailing dashed
+ * row implies the list continues beyond the few shown. */
+
+/* Small uppercase eyebrow above the title. */
+.proj-kicker {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brand-accent-dark);
+  margin-bottom: 0.2rem;
+}
+
+.proj-list {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.proj-row {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.55rem 1rem;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--brand-accent-pale) 60%, transparent);
+  border-left: 3px solid var(--brand-accent);
+}
+
+.proj-num {
+  flex: none;
+  width: 1.5rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--brand-accent-dark);
+  opacity: 0.6;
+}
+
+.proj-emoji {
+  flex: none;
+  width: 2rem;
+  text-align: center;
+  font-size: 1.45rem;
+  line-height: 1;
+}
+
+.proj-name {
+  font-weight: 700;
+  color: var(--brand-primary-deep);
+}
+
+.proj-fed {
+  margin-left: 0.45rem;
+  padding: 0.02rem 0.5rem;
+  border: 1px solid var(--brand-accent-light);
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--brand-accent-dark);
+  vertical-align: 0.08em;
+}
+
+.proj-desc {
+  color: var(--brand-primary);
+  opacity: 0.8;
+  font-size: 0.98rem;
+}
+
+/* Pulsing "en cours" status, pushed to the right edge. */
+.proj-status {
+  flex: none;
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  font-style: italic;
+  color: var(--brand-accent-dark);
+}
+
+.proj-status::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--brand-accent);
+  animation: proj-pulse 2.2s ease-out infinite;
+}
+
+@keyframes proj-pulse {
+  0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--brand-accent) 60%, transparent); }
+  70% { box-shadow: 0 0 0 7px transparent; }
+  100% { box-shadow: 0 0 0 0 transparent; }
+}
+
+/* Faded dashed trailing row — "the list goes on". */
+.proj-more {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.45rem 1rem;
+  border-radius: 12px;
+  border: 1px dashed var(--brand-accent-light);
+  color: var(--brand-primary);
+  opacity: 0.55;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+.proj-more .proj-emoji { opacity: 0.7; }
+
+/* --- Project meta bar (<ProjectPeople>) ------------------------ *
+ * Shared header strip for the four applied-research project slides:
+ * English title + contract on the left, the people involved (student
+ * avatars) and the partner federation logo on the right. One slim,
+ * consistent band so the four projects read as a single pattern. */
+.proj-people {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding: 0.5rem 0.85rem;
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--brand-accent-pale) 45%, transparent);
+  border: 1px solid var(--brand-accent-light);
+}
+
+.pp-lead { min-width: 0; }
+
+.pp-subtitle {
+  font-size: 0.82rem;
+  font-style: italic;
+  line-height: 1.25;
+  color: var(--brand-primary);
+  opacity: 0.78;
+}
+
+.pp-contract {
+  margin-top: 0.2rem;
+  display: inline-block;
+  padding: 0.05rem 0.5rem;
+  border-radius: 999px;
+  background: var(--brand-primary);
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.pp-actors {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pp-person {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pp-avatar {
+  width: 2.45rem;
+  height: 2.45rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--brand-accent);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.pp-avatar-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--brand-primary);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.pp-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--brand-primary-deep);
+  line-height: 1.1;
+}
+
+.pp-role {
+  font-size: 0.7rem;
+  color: var(--brand-accent-dark);
+}
+
+.pp-fed {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  border-left: 1px solid var(--brand-accent-light);
+}
+
+/* No student on this project → logo sits alone, drop the divider. */
+.pp-actors > .pp-fed:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+
+.pp-fed-logo {
+  height: 2.6rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.pp-fed-name {
+  padding: 0.15rem 0.6rem;
+  border: 1px solid var(--brand-accent);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--brand-accent-dark);
+}
+
+/* --- Before/after photo diptych (project visuals) -------------- *
+ * Two framed portrait photos joined by an arrow — used to show a
+ * paired sequence (e.g. vélo → course for the bike-to-run project). */
+.proj-diptych {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.proj-shot {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--brand-accent-light);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.proj-shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Contain variant — for silhouettes / diagrams that shouldn't be cropped. */
+.proj-shot.contain {
+  background: var(--brand-accent-pale);
+}
+
+.proj-shot.contain img {
+  object-fit: contain;
+  padding: 0.85rem;
+}
+
+/* Figure variant — white field for scientific plots (no crop). */
+.proj-shot.figure {
+  background: #fff;
+}
+
+.proj-shot.figure img {
+  object-fit: contain;
+  padding: 0.6rem;
+}
+
+.proj-shot-tag {
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0.5rem;
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  background: var(--brand-primary);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.proj-arrow {
+  flex: none;
+  align-self: center;
+  font-size: 1.6rem;
+  color: var(--brand-accent-dark);
+}
+
+.proj-caption {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--brand-primary);
+  opacity: 0.75;
+}
+
+/* --- Numbered objectives (project slides) --------------------- */
+.proj-goals {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.goal {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.goal-num {
+  flex: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 0.05rem;
+  border-radius: 50%;
+  background: var(--brand-accent);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.goal-text {
+  font-size: 0.9rem;
+  line-height: 1.35;
+  color: var(--brand-primary);
+}
+
+/* --- Published-paper badge (project slides) ------------------- *
+ * Highlights a peer-reviewed output tied to a project. Icon +
+ * "publié" label + compact citation with a DOI link. */
+.pub-badge {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 12px;
+  background: var(--brand-accent-pale);
+  border-left: 4px solid var(--brand-accent);
+}
+
+.pub-badge-icon {
+  flex: none;
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+
+.pub-badge-label {
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand-accent-dark);
+}
+
+.pub-badge-cite {
+  margin-top: 0.12rem;
+  font-size: 0.8rem;
+  line-height: 1.32;
+  color: var(--brand-primary-deep);
+}
+
+.pub-badge-cite a {
+  color: var(--brand-accent-dark);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}

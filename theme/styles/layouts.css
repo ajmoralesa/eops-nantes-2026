@@ -1,0 +1,126 @@
+/* ============================================================= *
+ *  Layout-specific styling                                       *
+ *  Class hooks match the layout name (e.g. .slidev-layout.cover).*
+ * ============================================================= */
+
+/* ---- Cover ---------------------------------------------------- */
+
+.slidev-layout.cover {
+  padding: 0;
+}
+
+.slidev-layout.cover h1 {
+  color: #ffffff;
+  font-size: 2.7rem;
+  line-height: 1.18;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.slidev-layout.cover h1::after { display: none; }
+
+.slidev-layout.cover h2 {
+  color: var(--brand-accent-light);
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 0.8rem;
+}
+
+.slidev-layout.cover p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.05rem;
+}
+
+.slidev-layout.cover strong {
+  color: #ffffff;
+}
+
+.slidev-layout.cover .cover-tagline {
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--brand-accent-light);
+  opacity: 0.85;
+}
+
+.slidev-layout.cover .cover-date {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+/* Light-background cover variant (e.g. brand=rgi): dark text on white. */
+html[data-brand='rgi'] .slidev-layout.cover h1 { color: var(--brand-primary-deep); }
+html[data-brand='rgi'] .slidev-layout.cover h2 { color: var(--brand-accent-dark); }
+html[data-brand='rgi'] .slidev-layout.cover p { color: var(--brand-primary); }
+html[data-brand='rgi'] .slidev-layout.cover strong { color: var(--brand-primary-deep); }
+html[data-brand='rgi'] .slidev-layout.cover .cover-tagline { color: var(--brand-accent-dark); }
+html[data-brand='rgi'] .slidev-layout.cover .cover-date { color: var(--brand-primary); }
+
+/* ---- Section divider ----------------------------------------- */
+
+.slidev-layout.section h1 {
+  color: var(--brand-primary-deep);
+  font-size: 2.6rem;
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.slidev-layout.section h1::after { display: none; }
+
+.slidev-layout.section p {
+  color: var(--brand-accent-dark);
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 0.6rem;
+}
+
+/* ---- Fact (big number) --------------------------------------- */
+
+.slidev-layout.fact h1 {
+  color: var(--brand-primary-deep);
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0.2em;
+}
+
+.slidev-layout.fact h1::after { display: none; }
+
+.slidev-layout.fact p {
+  color: var(--brand-accent-dark);
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+/* ---- Quote --------------------------------------------------- */
+
+.slidev-layout.quote blockquote {
+  font-size: 1.5rem;
+  border-left-width: 5px;
+  padding-left: 1.5em;
+}
+
+.slidev-layout.quote blockquote p {
+  line-height: 1.6;
+}
+
+/* ---- End / closing ------------------------------------------- */
+
+.slidev-layout.end {
+  padding: 0;
+}
+
+.slidev-layout.end h1,
+.slidev-layout.end h2,
+.slidev-layout.end p {
+  color: #ffffff;
+}
+
+.slidev-layout.end h1::after { display: none; }

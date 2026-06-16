@@ -1,0 +1,89 @@
+/* ============================================================= *
+ *  Reusable branded content blocks                              *
+ *                                                               *
+ *  These are generic, every-talk building blocks (NOT one-offs).*
+ *  Talk-specific styling belongs in the deck's own style.css.   *
+ *                                                               *
+ *  Usage in markdown:                                           *
+ *    <div class="takeaway">The one thing to remember…</div>     *
+ *    <div class="note">Aside / hand-off note</div>              *
+ *    <div class="ask">An open question for the room?</div>      *
+ *    <div class="ref">Source: Author et al., 2024</div>         *
+ * ============================================================= */
+
+/* One-line takeaway callout (gold left border, pale fill). */
+.takeaway {
+  margin-top: 0.4em;
+  padding: 0.5em 0.9em;
+  border-left: 4px solid var(--brand-accent);
+  background: var(--brand-accent-pale);
+  border-radius: 0 6px 6px 0;
+  font-size: 1.15rem;
+  line-height: 1.4;
+  color: var(--brand-primary-deep);
+}
+
+.takeaway strong { color: var(--brand-primary-deep); }
+
+/* Filled aside / hand-off note (navy block, light text). */
+.note {
+  margin-top: 0.6em;
+  padding: 0.6em 0.95em;
+  border-radius: 8px;
+  background: var(--brand-primary);
+  color: #fff;
+  font-size: 1.02rem;
+  line-height: 1.45;
+}
+
+.note strong { color: var(--brand-accent-light); }
+
+/* Open question to the audience (dashed gold border + "?" badge). */
+.ask {
+  margin-top: 0.6em;
+  padding: 0.55em 0.95em 0.55em 2.6em;
+  position: relative;
+  border: 1.5px dashed var(--brand-accent);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--brand-accent-pale) 55%, transparent);
+  font-size: 1.1rem;
+  line-height: 1.4;
+  font-style: italic;
+  color: var(--brand-primary-deep);
+}
+
+.ask::before {
+  content: '?';
+  position: absolute;
+  left: 0.6em;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.4em;
+  height: 1.4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--brand-accent);
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.95em;
+}
+
+.ask strong { color: var(--brand-primary-deep); }
+
+/* Tiny right-aligned citation / source line. */
+.ref {
+  font-size: 0.6rem;
+  opacity: 0.45;
+  text-align: right;
+  font-style: italic;
+  color: var(--brand-primary);
+}
+
+.ref a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}

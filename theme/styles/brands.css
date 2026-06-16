@@ -1,0 +1,51 @@
+/* ============================================================= *
+ *  Brand color tokens                                           *
+ *                                                               *
+ *  The canonical names are --brand-*. The --insep-* aliases are *
+ *  kept so older decks (and inline styles copied from them)     *
+ *  keep working; because custom properties resolve lazily at    *
+ *  the point of use, the aliases follow whichever brand is      *
+ *  active in the cascade.                                       *
+ *                                                               *
+ *  :root is the INSEP default (correct on first paint / SSR).   *
+ *  global-top.vue sets html[data-brand] from themeConfig.brand, *
+ *  which activates one of the variant blocks below.             *
+ * ============================================================= */
+
+:root,
+html[data-brand='insep'] {
+  --brand-primary: #2c2f65;        /* navy — headings, corner, footer */
+  --brand-primary-deep: #002060;   /* deep navy — title / cover text */
+  --brand-royal: #000ba2;          /* official logo blue */
+  --brand-accent: #c59f69;         /* gold */
+  --brand-accent-light: #dcc68f;
+  --brand-accent-pale: #f9e9ca;
+  --brand-accent-dark: #b47746;
+  --brand-contrast: #c5243d;       /* red — sparing emphasis */
+  --brand-cover-bg: #2c2f65;       /* cover background when no image */
+}
+
+html[data-brand='rgi'] {
+  --brand-primary: #2c2f65;
+  --brand-primary-deep: #002060;
+  --brand-royal: #000ba2;
+  --brand-accent: #c59f69;
+  --brand-accent-light: #dcc68f;
+  --brand-accent-pale: #f9e9ca;
+  --brand-accent-dark: #b47746;
+  --brand-contrast: #c5243d;
+  --brand-cover-bg: #ffffff;
+}
+
+/* Legacy aliases — keep decks that reference --insep-* working. */
+:root {
+  --slidev-theme-primary: var(--brand-primary);
+  --insep-navy: var(--brand-primary);
+  --insep-navy-deep: var(--brand-primary-deep);
+  --insep-royal: var(--brand-royal);
+  --insep-gold: var(--brand-accent);
+  --insep-gold-light: var(--brand-accent-light);
+  --insep-gold-pale: var(--brand-accent-pale);
+  --insep-gold-dark: var(--brand-accent-dark);
+  --insep-red: var(--brand-contrast);
+}

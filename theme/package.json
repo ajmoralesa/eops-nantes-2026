@@ -1,0 +1,64 @@
+{
+  "name": "slidev-theme-insep",
+  "version": "2.0.0",
+  "description": "INSEP institutional Slidev theme — brand-variant aware (INSEP, Réseau Grand INSEP, federations).",
+  "author": "Antonio Morales-Artacho",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "slidev-theme",
+    "slidev",
+    "insep",
+    "presentation"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "slidev": ">=0.48.0"
+  },
+  "scripts": {
+    "dev": "slidev example.md --open",
+    "build": "slidev build example.md",
+    "export": "slidev export example.md"
+  },
+  "peerDependencies": {
+    "@slidev/cli": ">=0.48.0",
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^52.16.0",
+    "@slidev/types": "^52.16.0",
+    "vue": "^3.5.33"
+  },
+  "files": [
+    "layouts",
+    "components",
+    "styles",
+    "assets",
+    "public",
+    "brand.ts",
+    "useBrand.ts",
+    "layoutHelper.ts",
+    "uno.config.ts",
+    "shims.d.ts",
+    "global-top.vue",
+    "global-bottom.vue"
+  ],
+  "slidev": {
+    "colorSchema": "light",
+    "defaults": {
+      "fonts": {
+        "sans": "Jost",
+        "mono": "JetBrains Mono"
+      },
+      "highlighter": "shiki",
+      "aspectRatio": "16/9",
+      "canvasWidth": 980,
+      "transition": "slide-left"
+    },
+    "themeConfig": {
+      "brand": "insep",
+      "author": "Antonio Morales-Artacho",
+      "org": "INSEP"
+    }
+  }
+}
