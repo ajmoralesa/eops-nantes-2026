@@ -289,7 +289,7 @@ layout: default
 
 ---
 
-# SPECYCLENDU — évaluation physiologique en cyclisme
+# SPECYCLENDU: évaluation physiologique en cyclisme
 
 <ProjectPeople titleEn="Évaluation des capacités aérobies et de l'endurance en cyclisme" contract="CIFRE · INSEP–FFC" fed="FFC" fed-logo="/ffc_logo.png" :people="[{ name: 'Quentin Rousseau', role: 'Doctorant', photo: '/rousseau.jpg' }]" />
 
@@ -373,7 +373,7 @@ layout: default
 layout: default
 ---
 
-# EMBARK - VO₂max en kayak, sur l'eau
+# EMBARK: VO₂max en kayak, sur l'eau
 
 <ProjectPeople titleEn="Mesurer la VO₂max sur l'eau, du laboratoire au bassin olympique" contract="Collaboration · INSEP-FFCK" fed="FFCK" fed-logo="/ffck_logo.png" />
 
