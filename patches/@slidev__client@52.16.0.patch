@@ -1,0 +1,17 @@
+diff --git a/logic/slides.ts b/logic/slides.ts
+index cb156a18af745ff4c2028bc6515683ec2e45c277..e84a15d3e9ebc86a37cd4827e4e29876286c89f8 100644
+--- a/logic/slides.ts
++++ b/logic/slides.ts
+@@ -21,7 +21,11 @@ export function getSlidePath(
+     route = getSlide(route)!
+   const no = route.meta.slide?.frontmatter.routeAlias ?? route.no
+   const path = exporting ? `export/${no}` : presenter ? `presenter/${no}` : `${no}`
+-  return `${import.meta.env.BASE_URL}${path}`
++  // Patched (eops-nantes-2026): return the IN-APP path only. vue-router 5's
++  // createWebHistory(BASE_URL) already prepends the base on navigation, and
++  // overview.vue does `pathPrefix + path.slice(1)`, so prepending BASE_URL here
++  // double-applied it (/repo/repo/3 -> 404). See slidevjs/slidev base handling.
++  return `/${path}`
+ }
+ 
+ export function useIsSlideActive() {
