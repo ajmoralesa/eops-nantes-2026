@@ -71,7 +71,7 @@ layout: default
 </div>
 <div class="pb-5 flex-1 flex items-center justify-between gap-4">
 <div><strong class="text-xl text-brand-navy">Licence en sciences du sport</strong> <span class="opacity-55"> / INEF, Universidad de Granada</span></div>
-<div class="shrink-0 flex items-center gap-6"><div class="w-[160px] h-[64px] rounded-xl bg-white border border-[#e9ebf2] shadow-[0_2px_12px_rgba(20,30,80,0.06)] flex items-center justify-center p-3"><img :src="'/logos/ugr-seal.png'" alt="Universidad de Granada" class="max-h-full max-w-full object-contain" /></div><span class="w-[104px] text-right text-brand-gold-dark font-semibold">2008</span></div>
+<div class="shrink-0 flex items-center gap-6"><div class="w-[160px] h-[64px] rounded-xl bg-white border border-[#e9ebf2] shadow-[0_2px_12px_rgba(20,30,80,0.06)] flex items-center justify-center p-3"><BaseImg src="/logos/ugr-seal.png" alt="Universidad de Granada" class="max-h-full max-w-full object-contain" /></div><span class="w-[104px] text-right text-brand-gold-dark font-semibold">2008</span></div>
 </div>
 </div>
 
@@ -82,7 +82,7 @@ layout: default
 </div>
 <div class="pb-5 flex-1 flex items-center justify-between gap-4">
 <div><strong class="text-xl text-brand-navy">MSc Exercise Physiology</strong> <span class="opacity-55">/ Loughborough University</span></div>
-<div class="shrink-0 flex items-center gap-6"><div class="w-[160px] h-[64px] rounded-xl bg-white border border-[#e9ebf2] shadow-[0_2px_12px_rgba(20,30,80,0.06)] flex items-center justify-center p-3"><img :src="'/logos/loughborough-mark.png'" alt="Loughborough University" class="max-h-full max-w-full object-contain" /></div><span class="w-[104px] text-right text-brand-gold-dark font-semibold">2014</span></div>
+<div class="shrink-0 flex items-center gap-6"><div class="w-[160px] h-[64px] rounded-xl bg-white border border-[#e9ebf2] shadow-[0_2px_12px_rgba(20,30,80,0.06)] flex items-center justify-center p-3"><BaseImg src="/logos/loughborough-mark.png" alt="Loughborough University" class="max-h-full max-w-full object-contain" /></div><span class="w-[104px] text-right text-brand-gold-dark font-semibold">2014</span></div>
 </div>
 </div>
 
@@ -93,7 +93,7 @@ layout: default
 </div>
 <div class="pb-5 flex-1 flex items-center justify-between gap-4">
 <div><strong class="text-xl text-brand-navy">PhD en sciences du sport</strong> <span class="opacity-55">/ Universidad de Granada, CAR Sierra Nevada</span></div>
-<div class="shrink-0 flex items-center gap-6"><div class="w-[160px] h-[64px] rounded-xl bg-white border border-[#e9ebf2] shadow-[0_2px_12px_rgba(20,30,80,0.06)] flex items-center justify-center p-3"><img :src="'/logos/ugr-seal.png'" alt="Universidad de Granada" class="max-h-full max-w-full object-contain" /></div><span class="w-[104px] text-right text-brand-gold-dark font-semibold">2019</span></div>
+<div class="shrink-0 flex items-center gap-6"><div class="w-[160px] h-[64px] rounded-xl bg-white border border-[#e9ebf2] shadow-[0_2px_12px_rgba(20,30,80,0.06)] flex items-center justify-center p-3"><BaseImg src="/logos/ugr-seal.png" alt="Universidad de Granada" class="max-h-full max-w-full object-contain" /></div><span class="w-[104px] text-right text-brand-gold-dark font-semibold">2019</span></div>
 </div>
 </div>
 
@@ -103,7 +103,7 @@ layout: default
 </div>
 <div class="flex-1 flex items-center justify-between gap-4">
 <div><strong class="text-xl text-brand-navy">Chercheur à l'INSEP</strong> <span class="opacity-55">/ Laboratoire SEP</span></div>
-<div class="shrink-0 flex items-center gap-6"><div class="w-[160px] h-[64px] rounded-xl bg-white border border-[#e9ebf2] shadow-[0_2px_12px_rgba(20,30,80,0.06)] flex items-center justify-center p-3"><img :src="'/logos/insep-mark.png'" alt="INSEP" class="max-h-full max-w-full object-contain" /></div><span class="w-[104px] text-right text-brand-gold-dark font-semibold">depuis 2019</span></div>
+<div class="shrink-0 flex items-center gap-6"><div class="w-[160px] h-[64px] rounded-xl bg-white border border-[#e9ebf2] shadow-[0_2px_12px_rgba(20,30,80,0.06)] flex items-center justify-center p-3"><BaseImg src="/logos/insep-mark.png" alt="INSEP" class="max-h-full max-w-full object-contain" /></div><span class="w-[104px] text-right text-brand-gold-dark font-semibold">depuis 2019</span></div>
 </div>
 </div>
 
@@ -247,7 +247,7 @@ layout: default
 
 </div>
 
-<img :src="'/chord_SEP.png'" alt="Réseau du Laboratoire SEP : thèmes de recherche reliés aux fédérations" class="w-full h-full object-contain" />
+<BaseImg src="/chord_SEP.png" alt="Réseau du Laboratoire SEP : thèmes de recherche reliés aux fédérations" class="w-full h-full object-contain" />
 
 </div>
 
@@ -316,7 +316,7 @@ layout: default
 <div>
 
 <div class="proj-diptych h-[285px]">
-<div class="proj-shot figure"><img :src="'/Rousseau_figure2.png'" alt="Protocole Step-Ramp-Step : puissance vs temps, seuils et W′" /></div>
+<div class="proj-shot figure"><BaseImg src="/Rousseau_figure2.png" alt="Protocole Step-Ramp-Step : puissance vs temps, seuils et W′" /></div>
 </div>
 
 <div class="proj-caption">Protocole « Step-Ramp-Step » un seul test pour VO₂max, seuils et réserve anaérobie (W′). <span class="opacity-70">Rousseau et al., 2026</span></div>
@@ -356,9 +356,9 @@ layout: default
 <div>
 
 <div class="proj-diptych h-[245px]">
-<div class="proj-shot"><img :src="'/velo_vo2.jpg'" alt="Test VO₂ sur vélo au laboratoire" /><div class="proj-shot-tag">Vélo</div></div>
+<div class="proj-shot"><BaseImg src="/velo_vo2.jpg" alt="Test VO₂ sur vélo au laboratoire" /><div class="proj-shot-tag">Vélo</div></div>
 <div class="proj-arrow">→</div>
-<div class="proj-shot"><img :src="'/run_vo2.jpg'" alt="Test VO₂ en course à pied au laboratoire" /><div class="proj-shot-tag">Course</div></div>
+<div class="proj-shot"><BaseImg src="/run_vo2.jpg" alt="Test VO₂ en course à pied au laboratoire" /><div class="proj-shot-tag">Course</div></div>
 </div>
 
 <div class="proj-caption">VO₂max, seuils, économie mesurés « à froid »</div>
@@ -495,7 +495,7 @@ dark: true
 </style>
 
 <div class="relative w-full h-full" style="background: #000;">
-<img :src="'/sabastian-sawe-05-25.jpg'" class="absolute inset-0 w-full h-full object-cover" style="opacity: 0.45;" />
+<BaseImg src="/sabastian-sawe-05-25.jpg" class="absolute inset-0 w-full h-full object-cover" style="opacity: 0.45;" />
 <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(0,0,0,0.90) 0%, rgba(0,0,0,0.55) 45%, rgba(0,0,0,0.20) 100%);"></div>
 <div class="relative z-10 h-full flex flex-col justify-center text-white" style="padding: 2.5rem 4rem 2rem;">
 <div class="font-semibold uppercase" style="color: var(--insep-gold); font-size: 0.7rem; letter-spacing: 0.3em; margin-bottom: 0.75rem;">Record du monde du marathon</div>
@@ -535,7 +535,7 @@ dark: true
 </style>
 
 <div class="relative w-full h-full" style="background: #000;">
-<img :src="'/pogacar-beille.jpg'" class="absolute inset-0 w-full h-full object-cover" style="opacity: 0.38;" />
+<BaseImg src="/pogacar-beille.jpg" class="absolute inset-0 w-full h-full object-cover" style="opacity: 0.38;" />
 <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.55) 50%, rgba(0,0,0,0.15) 100%);"></div>
 <div class="relative z-10 h-full flex flex-col justify-center text-white" style="padding: 2.5rem 4rem 2rem;">
 <div class="font-semibold uppercase" style="color: var(--insep-gold); font-size: 0.7rem; letter-spacing: 0.3em; margin-bottom: 0.75rem;">Tour de France 2024 — Plateau de Beille</div>
@@ -575,7 +575,7 @@ dark: true
 </style>
 
 <div class="relative w-full h-full" style="background: #000;">
-<img :src="'/gressier-tokyo.jpg'" class="absolute inset-0 w-full h-full object-cover" style="opacity: 0.40;" />
+<BaseImg src="/gressier-tokyo.jpg" class="absolute inset-0 w-full h-full object-cover" style="opacity: 0.40;" />
 <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(0,0,0,0.90) 0%, rgba(0,0,0,0.50) 50%, rgba(0,0,0,0.18) 100%);"></div>
 <div class="relative z-10 h-full flex flex-col justify-center text-white" style="padding: 2.5rem 4rem 2rem;">
 <div class="font-semibold uppercase" style="color: var(--insep-gold); font-size: 0.7rem; letter-spacing: 0.3em; margin-bottom: 0.75rem;">Record de France du 10 000 m — Paris, 2 août 2024</div>
@@ -915,8 +915,8 @@ blockTitle: VO₂max — Signification biologique
 </div>
 
 <div class="absolute bottom-20 left-1/2 -translate-x-1/2 flex gap-6">
-  <img :src="'/pronghorn.png'" class="h-28 rounded-lg object-cover shadow" />
-  <img :src="'/chiens-traineau.jpeg'" class="h-28 rounded-lg object-cover shadow" />
+  <BaseImg src="/pronghorn.png" class="h-28 rounded-lg object-cover shadow" />
+  <BaseImg src="/chiens-traineau.jpeg" class="h-28 rounded-lg object-cover shadow" />
 </div>
 
 <div class="ref-line mt-2 text-[9px] opacity-60">
@@ -999,7 +999,7 @@ dark: true
 </style>
 
 <div class="relative w-full h-full" style="background: #000;">
-<img :src="'/man-horse.jpg'" class="absolute inset-0 w-full h-full object-cover" style="opacity: 0.45;" />
+<BaseImg src="/man-horse.jpg" class="absolute inset-0 w-full h-full object-cover" style="opacity: 0.45;" />
 <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.55) 45%, rgba(0,0,0,0.20) 100%);"></div>
 <div class="relative z-10 h-full flex flex-col justify-center text-white" style="padding: 2.5rem 4rem 2rem;">
 <div class="font-semibold uppercase" style="color: var(--insep-gold); font-size: 0.7rem; letter-spacing: 0.3em; margin-bottom: 0.75rem;">Man vs. Horse Marathon — Llanwrtyd Wells, Pays de Galles</div>
@@ -1320,7 +1320,7 @@ const showCoutModal = ref(false)
 
 <!-- Breaking 2 photo — visible initially, disappears on click 1 -->
 <div v-click-hide="1" class="absolute inset-0 flex flex-col items-center justify-center">
-  <img :src="'/breaking2.jpg'" class="rounded-xl shadow-lg object-cover" style="max-height: 80%; width: auto;" />
+  <BaseImg src="/breaking2.jpg" class="rounded-xl shadow-lg object-cover" style="max-height: 80%; width: auto;" />
   <div class="text-xs opacity-40 mt-2 italic">Projet Nike « Breaking 2 » — Monza, 2017</div>
 </div>
 
@@ -1615,11 +1615,11 @@ layout: default
 <div class="relative w-full h-full" style="background: #0a0a14;">
 <div class="absolute inset-0 grid grid-cols-2">
 <div class="relative overflow-hidden">
-<img :src="'/boucheron-rowing.jpg'" class="absolute inset-0 w-full h-full object-cover" style="opacity: 0.3; object-position: center top;" />
+<BaseImg src="/boucheron-rowing.jpg" class="absolute inset-0 w-full h-full object-cover" style="opacity: 0.3; object-position: center top;" />
 <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(10,10,20,0.4) 0%, rgba(10,10,20,0.85) 100%);"></div>
 </div>
 <div class="relative overflow-hidden">
-<img :src="'/bardet.jpeg'" class="absolute inset-0 w-full h-full object-cover" style="opacity: 0.3; object-position: center top;" />
+<BaseImg src="/bardet.jpeg" class="absolute inset-0 w-full h-full object-cover" style="opacity: 0.3; object-position: center top;" />
 <div class="absolute inset-0" style="background: linear-gradient(to left, rgba(10,10,20,0.4) 0%, rgba(10,10,20,0.85) 100%);"></div>
 </div>
 </div>
@@ -1640,7 +1640,7 @@ layout: default
 <div class="text-[11px] leading-relaxed" style="color: rgba(255,255,255,0.65);">Grands gabarits favorisés<br/>Rameurs : ~198 cm / 98 kg<br/>VO₂max absolu <strong class="text-white">7.0+ L/min</strong><br/>Relatif : ~70 mL/kg/min</div>
 </div>
 <div class="mt-3 rounded-lg overflow-hidden shadow-lg" style="border: 1.5px solid rgba(44, 47, 101, 0.3); width: 11rem;">
-<img :src="'/boucheron-rowing.jpg'" class="w-full" style="height: 7rem; object-fit: cover; object-position: center top;" />
+<BaseImg src="/boucheron-rowing.jpg" class="w-full" style="height: 7rem; object-fit: cover; object-position: center top;" />
 <div class="text-center py-1" style="background: rgba(44, 47, 101, 0.6); backdrop-filter: blur(4px);">
 <div class="text-[10px] font-600 text-white">H. Boucheron — Aviron</div>
 <div class="text-[8px]" style="color: rgba(255,255,255,0.4);">~92 kg · puissance absolue</div>
@@ -1658,7 +1658,7 @@ layout: default
 <div class="text-[11px] leading-relaxed" style="color: rgba(255,255,255,0.65);">Légèreté favorisée<br/>Coureurs : ~170 cm / 57 kg<br/>VO₂max relatif <strong class="text-white">85 mL/kg/min</strong><br/>Absolu : ~4.8 L/min</div>
 </div>
 <div class="mt-3 rounded-lg overflow-hidden shadow-lg" style="border: 1.5px solid rgba(197, 36, 61, 0.3); width: 11rem;">
-<img :src="'/bardet.jpeg'" class="w-full" style="height: 7rem; object-fit: cover; object-position: center 15%;" />
+<BaseImg src="/bardet.jpeg" class="w-full" style="height: 7rem; object-fit: cover; object-position: center 15%;" />
 <div class="text-center py-1" style="background: rgba(197, 36, 61, 0.5); backdrop-filter: blur(4px);">
 <div class="text-[10px] font-600 text-white">R. Bardet — Cyclisme</div>
 <div class="text-[8px]" style="color: rgba(255,255,255,0.4);">~65 kg · puissance relative</div>
@@ -1811,23 +1811,23 @@ layout: default
 <!-- Species lineup: images scaled to approximate real body proportions -->
 <div style="display:flex; align-items:flex-end; justify-content:center; gap:14px; margin-top:10px;">
   <div style="text-align:center;">
-    <img :src="'/souris.jpg'" style="height:15px; object-fit:contain;" />
+    <BaseImg src="/souris.jpg" style="height:15px; object-fit:contain;" />
     <div style="font-size:7px; color:#93a3b8; margin-top:2px; font-weight:600;">Souris · <strong>160</strong></div>
   </div>
   <div style="text-align:center;">
-    <img :src="'/chien.jpg'" style="height:42px; object-fit:contain;" />
+    <BaseImg src="/chien.jpg" style="height:42px; object-fit:contain;" />
     <div style="font-size:7px; color:#C59F69; margin-top:2px; font-weight:600;">Chien · <strong>200</strong></div>
   </div>
   <div style="text-align:center;">
-    <img :src="'/kipchogue.webp'" style="height:70px; object-fit:contain;" />
+    <BaseImg src="/kipchogue.webp" style="height:70px; object-fit:contain;" />
     <div style="font-size:7px; color:#2C2F65; margin-top:2px; font-weight:600;">Humain · <strong>85</strong></div>
   </div>
   <div style="text-align:center;">
-    <img :src="'/cheval.jpg'" style="height:95px; object-fit:contain;" />
+    <BaseImg src="/cheval.jpg" style="height:95px; object-fit:contain;" />
     <div style="font-size:7px; color:#C59F69; margin-top:2px; font-weight:600;">Cheval · <strong>180</strong></div>
   </div>
   <div style="text-align:center;">
-    <img :src="'/eland.jpg'" style="height:95px; object-fit:contain;" />
+    <BaseImg src="/eland.jpg" style="height:95px; object-fit:contain;" />
     <div style="font-size:7px; color:#93a3b8; margin-top:2px; font-weight:600;">Éland · <strong>40</strong></div>
   </div>
 </div>
@@ -2171,7 +2171,7 @@ layout: default
 <div v-click class="px-4 py-3 rounded-xl" style="background: linear-gradient(135deg, rgba(44,47,101,0.04) 0%, rgba(197,159,105,0.06) 100%); border: 1.5px solid rgba(197, 159, 105, 0.2);">
   <div class="text-sm font-700 mb-1" style="color: var(--insep-navy);">La navette du lactate (Brooks, 2018)</div>
   <div class="grid grid-cols-[auto_1fr] gap-3 items-center">
-    <img :src="'/lactate_brooks.png'" class="h-40 rounded-lg" alt="Lactate shuttle (Brooks)" />
+    <BaseImg src="/lactate_brooks.png" class="h-40 rounded-lg" alt="Lactate shuttle (Brooks)" />
     <div class="flex flex-col gap-1.5 text-xs text-gray-600">
       <div><strong>Cellule → cellule</strong> — Produit dans les fibres glycolytiques, consommé par les fibres oxydatives</div>
       <div><strong>Muscle → cœur</strong> — Le lactate est le carburant principal du cœur à l'exercice</div>
@@ -2234,7 +2234,7 @@ layout: center
 
 # Métabolisme énergétique
 
-<img :src="'/metabolisme.png'" class="h-[70%] mx-auto" />
+<BaseImg src="/metabolisme.png" class="h-[70%] mx-auto" />
 
 
 
@@ -2489,7 +2489,7 @@ layout: default
 <strong>Ces deux seuils délimitent les 3 domaines d'intensité</strong> — modéré · lourd · sévère
 </div>
 <div class="shrink-0 cursor-pointer border-2 border-gray-300 rounded overflow-hidden hover:border-[#2C2F65] transition-colors" @click="showModal = true">
-  <img :src="'/vt-RCP-schema.png'" class="w-20 h-auto" alt="Courbes GET/RCP" />
+  <BaseImg src="/vt-RCP-schema.png" class="w-20 h-auto" alt="Courbes GET/RCP" />
 </div>
 </div>
 
@@ -2508,7 +2508,7 @@ if (typeof window !== 'undefined') {
       <span style="font-size:12px;font-weight:bold;color:#374151;">Signatures ventilatoires — GET (VT1) et RCP (VT2)</span>
       <button @click="showModal = false" style="color:#9ca3af;font-size:20px;font-weight:bold;line-height:1;cursor:pointer;border:none;background:none;">&times;</button>
     </div>
-    <img :src="'/vt-RCP-schema.png'" style="width:100%;height:auto;" alt="Courbes GET/RCP" />
+    <BaseImg src="/vt-RCP-schema.png" style="width:100%;height:auto;" alt="Courbes GET/RCP" />
     <div style="font-size:9px;color:#6b7280;margin-top:4px;text-align:center;">Adapté de Keir et al. 2021 — cliquer en dehors pour fermer</div>
   </div>
 </div>
@@ -2633,7 +2633,7 @@ layout: default
 </div>
 
 <div v-click class="flex justify-center mb-2">
-  <img :src="'/MLSS.png'" class="rounded-lg" style="height: 145px;" />
+  <BaseImg src="/MLSS.png" class="rounded-lg" style="height: 145px;" />
 </div>
 
 <div v-click class="px-3 py-2 rounded-lg" style="background: rgba(197, 36, 61, 0.05); border-left: 3px solid var(--insep-red);">
@@ -2830,7 +2830,7 @@ layout: center
 # Calculez votre CP <span class="text-base font-normal text-gray-400 ml-2">exphyslab.com/cp</span>
 
 <div class="flex flex-col items-center mt-2">
-  <img :src="'/exphys_CP.png'" class="rounded-lg shadow-lg w-160" />
+  <BaseImg src="/exphys_CP.png" class="rounded-lg shadow-lg w-160" />
   <div class="mt-4 text-center text-lg">
     👉 <a href="https://exphyslab.com/cp" target="_blank" style="color: var(--insep-gold-dark); text-decoration: underline; text-underline-offset: 3px;">exphyslab.com/cp</a>
     <div class="text-sm text-gray-400 mt-1">Entrez vos données Power (W) / Time (s) → obtenez CP et W'</div>
@@ -2881,7 +2881,7 @@ layout: default
     <div onclick="this.classList.toggle('flipped')" class="flip-card-79" style="position: relative; transform-style: preserve-3d; transition: transform 0.7s ease; cursor: pointer;">
       <!-- Front: Image -->
       <div style="backface-visibility: hidden; position: relative;">
-        <img :src="'/jones_2008.jpeg'" class="w-full rounded-lg" style="box-shadow: 0 3px 12px rgba(0,0,0,0.1);" />
+        <BaseImg src="/jones_2008.jpeg" class="w-full rounded-lg" style="box-shadow: 0 3px 12px rgba(0,0,0,0.1);" />
         <div style="position: absolute; bottom: 6px; right: 6px; background: rgba(255,255,255,0.92); backdrop-filter: blur(4px); border-radius: 9999px; padding: 2px 8px; font-size: 0.5rem; color: #555; display: flex; align-items: center; gap: 3px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
           <span style="font-size: 0.65rem;">&#8635;</span> Détails de l'étude
         </div>
@@ -3049,7 +3049,7 @@ layout: default
 </div>
 
 <div class="flex flex-col items-center justify-center">
-  <img :src="'/kordi-ppo-mvt.png'" class="rounded-lg" style="max-height: 320px;" />
+  <BaseImg src="/kordi-ppo-mvt.png" class="rounded-lg" style="max-height: 320px;" />
   <div class="text-[0.6rem] text-gray-400 mt-2 text-center">
     PPO vs MVT — <em>r</em> = 0.83, <em>P</em> < .001
     <br/>
@@ -3073,11 +3073,11 @@ layout: default
 
 <div class="relative" style="min-height: 300px;">
   <div v-click="[1, 2]" class="absolute inset-0 flex flex-col items-center">
-    <img :src="'/ecsss_2024/predictors.png'" class="rounded-lg" style="max-width: 85%; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
+    <BaseImg src="/ecsss_2024/predictors.png" class="rounded-lg" style="max-width: 85%; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
     <div class="text-[0.55rem] text-gray-400 mt-1 text-center">Coefficients bêta standardisés — 3 modèles d'estimation de W'</div>
   </div>
   <div v-click="[2, 3]" class="absolute inset-0 flex flex-col items-center">
-    <img :src="'/ecsss_2024/correlations.png'" class="rounded-lg" style="max-width: 85%; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
+    <BaseImg src="/ecsss_2024/correlations.png" class="rounded-lg" style="max-width: 85%; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" />
     <div class="text-[0.55rem] text-gray-400 mt-1 text-center">Corrélations W' vs V<sub>max</sub>, P<sub>max</sub>, BLC<sub>max_fit</sub></div>
   </div>
 </div>
@@ -3122,7 +3122,7 @@ W' n'est pas un réservoir « one shot ». Lorsque la puissance redescend <stron
 <div class="flex flex-col items-center justify-center">
 
 <div v-click>
-  <img :src="'/lievens_msse_W_recovery.png'" class="rounded-lg shadow-md" style="max-height: 380px;" />
+  <BaseImg src="/lievens_msse_W_recovery.png" class="rounded-lg shadow-md" style="max-height: 380px;" />
   <div class="text-[0.6rem] text-gray-400 mt-2 text-center">
     <a href="https://doi.org/10.1249/MSS.0000000000003468" target="_blank" style="color: inherit; text-decoration: underline; text-underline-offset: 2px;">Lievens et al. (2024), <em>Med Sci Sports Exerc</em> 56(10):1916-1925</a>
     <span class="mx-1">·</span>
@@ -3365,7 +3365,7 @@ layout: default
 <div class="grid grid-cols-[1fr_1.1fr] gap-6 mt-2">
 
 <div>
-<img :src="'/Jones et al 2019.png'" class="rounded-lg shadow-md" style="max-height: 320px; object-fit: contain;" />
+<BaseImg src="/Jones et al 2019.png" class="rounded-lg shadow-md" style="max-height: 320px; object-fit: contain;" />
 <div class="text-[0.6rem] text-gray-400 mt-1 text-center">Adapté de Jones et al. (2019)</div>
 </div>
 

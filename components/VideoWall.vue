@@ -12,6 +12,7 @@
  *     :labels="['Kayak','Canoë','K4']" />
  */
 import { ref, nextTick, onBeforeUnmount } from 'vue'
+import { asset } from './useAsset'
 
 const props = withDefaults(defineProps<{
   poster: string
@@ -50,7 +51,7 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKey))
 <template>
   <div class="proj-shot vw-trigger" role="button" tabindex="0"
     @click="openModal" @keydown.enter="openModal" @keydown.space.prevent="openModal">
-    <img :src="poster" :alt="tag || 'Voir les vidéos'" />
+    <img :src="asset(poster)" :alt="tag || 'Voir les vidéos'" />
     <div v-if="tag" class="proj-shot-tag">{{ tag }}</div>
     <div class="vw-play"><div class="i-carbon-play-filled-alt" /></div>
   </div>
@@ -63,7 +64,7 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKey))
         </button>
         <div class="vw-grid" :style="{ '--n': videos.length }">
           <div v-for="(v, i) in videos" :key="v" class="vw-cell">
-            <video :ref="setRef(i)" :src="v" muted loop playsinline preload="auto" />
+            <video :ref="setRef(i)" :src="asset(v)" muted loop playsinline preload="auto" />
             <div v-if="labels[i]" class="vw-label">{{ labels[i] }}</div>
           </div>
         </div>

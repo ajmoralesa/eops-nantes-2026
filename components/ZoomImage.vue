@@ -8,6 +8,7 @@
  *   <ZoomImage src="/brs_3x750.png" tag="3×750 m" alt="Profil physiologique" variant="figure" />
  */
 import { ref, onBeforeUnmount } from 'vue'
+import { asset } from './useAsset'
 
 withDefaults(defineProps<{
   src: string
@@ -38,7 +39,7 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKey))
 <template>
   <div class="proj-shot zi-trigger" :class="variant" role="button" tabindex="0"
     @click="openModal" @keydown.enter="openModal" @keydown.space.prevent="openModal">
-    <img :src="src" :alt="alt || tag || 'Agrandir la figure'" />
+    <img :src="asset(src)" :alt="alt || tag || 'Agrandir la figure'" />
     <div v-if="tag" class="proj-shot-tag">{{ tag }}</div>
     <div class="zi-zoom"><div class="i-carbon-zoom-in" /></div>
   </div>
@@ -49,7 +50,7 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKey))
         <button class="zi-close" aria-label="Fermer" @click="closeModal">
           <div class="i-carbon-close" />
         </button>
-        <img class="zi-full" :src="src" :alt="alt || tag || ''" @click="closeModal" />
+        <img class="zi-full" :src="asset(src)" :alt="alt || tag || ''" @click="closeModal" />
       </div>
     </Transition>
   </Teleport>
