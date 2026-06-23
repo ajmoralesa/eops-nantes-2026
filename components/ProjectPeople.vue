@@ -13,6 +13,8 @@
  *     fedLogo="/fftri_logo.png"
  *     :people="[{ name: 'Adrian Siblot', role: 'Doctorant CIFRE', photo: '/siblot.jpeg' }]" />
  */
+import { asset } from './useAsset'
+
 withDefaults(defineProps<{
   titleEn?: string
   contract?: string
@@ -35,7 +37,7 @@ const initials = (name: string) =>
     </div>
     <div class="pp-actors">
       <div v-for="p in people" :key="p.name" class="pp-person">
-        <img v-if="p.photo" :src="p.photo" :alt="p.name" class="pp-avatar" />
+        <img v-if="p.photo" :src="asset(p.photo)" :alt="p.name" class="pp-avatar" />
         <div v-else class="pp-avatar pp-avatar-fallback">{{ initials(p.name) }}</div>
         <div class="pp-id">
           <div class="pp-name">{{ p.name }}</div>
@@ -43,7 +45,7 @@ const initials = (name: string) =>
         </div>
       </div>
       <div v-if="fedLogo || fed" class="pp-fed">
-        <img v-if="fedLogo" :src="fedLogo" :alt="fed || 'Fédération'" class="pp-fed-logo" />
+        <img v-if="fedLogo" :src="asset(fedLogo)" :alt="fed || 'Fédération'" class="pp-fed-logo" />
         <span v-else class="pp-fed-name">{{ fed }}</span>
       </div>
     </div>

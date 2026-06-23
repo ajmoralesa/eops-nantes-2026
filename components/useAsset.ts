@@ -11,6 +11,8 @@
  *   import { asset } from './useAsset'
  *   <img :src="asset(src)">
  */
-export function asset(path: string): string {
+export function asset(path?: string): string {
+  if (!path)
+    return ''
   return `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`
 }
